@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kali <alirola-@student.42malaga.com >      +#+  +:+       +#+        */
+/*   By: alirola- <alirola-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 09:27:48 by kali              #+#    #+#             */
-/*   Updated: 2023/04/29 10:05:09 by kali             ###   ########.fr       */
+/*   Updated: 2023/10/26 19:56:03 by alirola-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,12 +53,3 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-/*
-int main(void)
-{
-	int n;
-
-	n = -1234;
-	printf("%s", ft_itoa(n));
-	return (0);
-}*/

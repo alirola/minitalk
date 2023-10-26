@@ -13,7 +13,7 @@ OBJ_C = $(SRC_C:.c=.o)
 %.o: %.c
 		@$(CC) $(FLAGS) -c $< -o $@
 
-all : server
+all : server client
 server: libft $(OBJ_S)
 		@ $(CC) $(FLAGS) -o $(NAME_S) $(OBJ_S) libft/*.o 
 

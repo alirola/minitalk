@@ -6,7 +6,7 @@
 /*   By: alirola- <alirola-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 12:23:56 by alirola-          #+#    #+#             */
-/*   Updated: 2023/05/22 16:18:19 by alirola-         ###   ########.fr       */
+/*   Updated: 2023/10/26 19:45:13 by alirola-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,3 @@ int	ft_atoi(const char *str)
 		return (num * -1);
 	return (num);
 }
-         

@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alirola- <alirola-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 15:58:33 by alirola-          #+#    #+#             */
-/*   Updated: 2023/10/26 16:06:49 by alirola-         ###   ########.fr       */
+/*   Created: 2023/10/26 19:49:43 by alirola-          #+#    #+#             */
+/*   Updated: 2023/10/26 19:54:15 by alirola-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdlib.h>
-#include <unistd.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
