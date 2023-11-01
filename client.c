@@ -13,7 +13,7 @@
 #include "libft/libft.h"
 #include <signal.h>
 
-void	killing_function(int pid, unsigned char octet)
+void	send_signal(int pid, unsigned char octet)
 {
 	int				i;
 	unsigned char	octet_tmp;
@@ -47,7 +47,7 @@ int	main(int argc, char **argv)
 	i = 0;
 	while (str_to_send[i])
 	{
-		killing_function(client_id, (unsigned char)str_to_send[i]);
+		send_signal(client_id, (unsigned char)str_to_send[i]);
 		i++;
 	}
 	ft_printf("Se han escrito %i caracteres\n", i);
