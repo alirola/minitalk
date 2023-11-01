@@ -13,7 +13,7 @@
 #include <signal.h>
 #include "libft/libft.h"
 
-void	rec_signal(int sigsent)
+void	handler(int sigsent)
 {
 	static unsigned char	buff;
 	static int				i;
@@ -33,8 +33,8 @@ void	rec_signal(int sigsent)
 int	main(void)
 {
 	ft_printf("El ID del cliente es: %i\n", getpid());
-	signal(SIGUSR2, rec_signal);
-	signal(SIGUSR1, rec_signal);
+	signal(SIGUSR2, handler);
+	signal(SIGUSR1, handler);
 	while (1)
 		pause ();
 	return (0);
