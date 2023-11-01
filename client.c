@@ -33,8 +33,8 @@ void	send_signal(int pid, unsigned char octet)
 
 int	main(int argc, char **argv)
 {
-	int		client_id;
-	char	*str_to_send;
+	int		pid;
+	char	*str_send;
 	int		i;
 
 	if (argc != 3)
@@ -42,12 +42,12 @@ int	main(int argc, char **argv)
 		ft_printf("No hay suficientes parametros\n");
 		return (0);
 	}
-	client_id = ft_atoi(argv[1]);
-	str_to_send = argv[2];
+	pid = ft_atoi(argv[1]);
+	str_send = argv[2];
 	i = 0;
-	while (str_to_send[i])
+	while (str_send[i])
 	{
-		send_signal(client_id, (unsigned char)str_to_send[i]);
+		send_signal(pid, (unsigned char)str_send[i]);
 		i++;
 	}
 	ft_printf("Se han escrito %i caracteres\n", i);
